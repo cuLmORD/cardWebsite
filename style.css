@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+.html {
+    zoom: 80%;
+}
+.gridContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0c0c0c;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 5px 5px;
+}
+.navbar {
+    grid-area: "navbar";
+    grid-row: span 1;
+    grid-column: span 5;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: 1c1c1c;
+}
+.content {
+    grid-area: "content";
+    grid-row: span 9;
+    grid-column: span 4;
+}
+.sidebar {  
+    grid-area: "sidebar";
+    grid-row: span 9;
+    grid-column: span 1;
+}
+.footer {
+    grid-area: "footer";
+    grid-row: span 1;
+    grid-column: span 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.gridItem {
+    background-color: #1a1a1a;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    font-weight: 500;
+}
+.navbarHover:hover {
+    color: #7b639d;
+    cursor: pointer;
+}
+.navbarFlexItem {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.navbarSearch {
+    flex-grow: 3;
+    flex-shrink: 0;
+    flex-basis: 2;
+}
+.navbarLogo {
+    font-size: 2rem;
+    padding-bottom: 0.5px;
+    color: white;
+}
+.navbarSearchText {
+    margin: 0;
+    width: 80%;
+    padding-left: 5px;
+    border-radius: 15px 0 0 15px;
+    background-color: #141414;
+    text-align: left;
+    border-left: #66498f solid 2px;
+    border-right: none;
+}
+.navbarSearchButton {
+    margin: 0;
+    width: 10%;
+    font-size: 25px;
+    color: white;
+    background-color: #1a1a1a;
+    border-radius: 0 15px 15px 0;
+    border-right: #66498f solid 2px;
+    border-left: none;
+}
+.navbarSearchButton:hover {
+    cursor: pointer;
+}
+.navbarSearchText, .navbarSearchButton {
+    height: 50%;
+    font-size: 30px;
+    border-top: none;
+    border-bottom: none;
+}
+.gridContainerContentCards {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.gridItemContentCards {
+    background-color: #101010;
+    border-radius: 10px;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+    padding: 5px;
+    gap: 5px;
+    box-shadow: 4px 4px 10px 1px #000000;
+}
+.cardItems {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cardItemsOne {
+    border-right: dashed #242424;
+    display: flex;
+    flex-direction: column;
+}
+.cardLogo {
+    font-size: 5rem;
+}
+.cardItemsTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 1rem;
+}
+.cardLink {
+    color: #66498f;
+    text-decoration: none;
+}

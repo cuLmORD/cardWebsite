@@ -1,0 +1,16 @@
+html {
+    background: linear-gradient(60deg, skyBlue, white);
+    min-height: 100vh;
+    text-align: center;
+}
+img {
+    margin: 5rem;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    background-color: orange;
+    border-radius: 20px;
+}
+h1 {
+    color: orange;
+}

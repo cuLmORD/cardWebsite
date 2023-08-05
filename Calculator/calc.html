@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+</head>
+<body>
+    <!-- this is a calculator -->
+    <div class="containercontainer">
+        <div class="container">
+            <input type="text" class="text child" id="display">
+            <button class="child clear" onclick="clearDisplay()">AC</button>
+            <button class="child clear" onclick="removeLastCharacter()">C</button>
+            <button class="child operator" onclick="operatorcaller('/')">/</button>
+            <button class="child operator" onclick="operatorcaller('*')">*</button>
+            <button class="child" onclick="numbercaller(1)">1</button>
+            <button class="child" onclick="numbercaller(2)">2</button>
+            <button class="child" onclick="numbercaller(3)">3</button>
+            <button class="child operator" onclick="operatorcaller('-')">-</button>
+            <button class="child" onclick="numbercaller(4)">4</button>
+            <button class="child" onclick="numbercaller(5)">5</button>
+            <button class="child" onclick="numbercaller(6)">6</button>
+            <button class="child operator" onclick="operatorcaller('+')">+</button>
+            <button class="child" onclick="numbercaller(7)">7</button>
+            <button class="child" onclick="numbercaller(8)">8</button>
+            <button class="child" onclick="numbercaller(9)">9</button>
+            <button class="child operator" onclick="operatorcaller('.')">.</button>
+            <button class="child operator" onclick="operatorcaller('\(')">(</button>
+            <button class="child" onclick="numbercaller(0)">0</button>
+            <button class="child operator" onclick="operatorcaller('\)')">)</button>
+            <button class="child equal" onclick="giveResult()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(45deg, #ffd92e, #db930d);
+    min-height: 100vh;
+    min-width: 100vh;
+    color: #783688;
+    font-family: 'Courier New';
+    text-align: center;
+}
+button {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(45deg, #dfe984, #69eeb7);
+}
+a {
+    color: rgb(193, 84, 226);
+}
