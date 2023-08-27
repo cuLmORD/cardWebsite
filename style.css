@@ -145,7 +145,34 @@
     text-align: left;
     font-size: 1rem;
 }
+p, h1, i {
+    transition: animation 300ms ease-in-out;
+}
+p:hover, h1:hover, i:hover {
+    animation: textAnim 5s;
+    animation-iteration-count: infinite;
+}
 .cardLink {
     color: #66498f;
     text-decoration: none;
+}
+@keyframes textAnim {
+    0% {
+        color: #ffc097;
+    }
+    20% {
+        color: #ffee93;
+    }
+    40% {
+        color: #fcf5c7;
+    }
+    60% {
+        color: #a0ced9;
+    }
+    80% {
+        color: #adf7b6;
+    }
+    100% {
+        color: #ffc097;
+    }
 }
