@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>BMI & BMR Calculator</title>
+</head>
+<body>
+
+<div class="entireContainer">
+
+    <div class="system">
+        <button onclick="setMetric()" id="metric" class="metric c1 c sys c3">Metric</button>
+        <button onclick="setImp()" id="imperial" class="imperial c1 sys c3">Imperial</button>
+    </div>
+
+    <div class="info c1 c">
+        <div class="height infoSection">
+            <section class="infoText">Height:</section>
+            <input id="height" type="text" class="c2" name="weight" placeholder="IDK" value="">
+        </div>
+
+        <div class="weight infoSection">
+            <section class="infoText">Weight:</section>
+            <input id="weight" class="c2" type="text" name="weight" placeholder="IDK" value="">
+        </div>
+
+        <div class="age infoSection">
+            <section class="infoText">Age:</section>
+            <input id="age" class="c2" type="text" name="weight" placeholder="Years" value="">
+        </div>
+
+        <div class="gender infoSection">
+            <section class="infoText">Gender:</section>
+            <button onclick="setmale()" id="maleB" class="maleButton c2 c3">M</button>
+            <button onclick="setfemale()" id="femaleB" class="femaleButton c2 c3">F</button>
+        </div>
+
+        <div class="infoSection">
+            <button id="calculate" class="calculate c2">Calculate!</button>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="cardContainer">
+            <div class="card c1 c">
+                <div class="cardSection">
+                    <section class="infoText cardText">BMI:</section>
+                    <div id="bmiFinal" class="cardInfo bmi c2">IDK</div>
+                </div>
+                <div id="bmifeedback" class="cardFeedBack c2"></div>
+            </div>
+
+            <div class="card c1 c">
+                <div class="cardSection">
+                    <section class="infoText cardText">BMR:</section>
+                    <div id="bmrFinal" class="cardInfo bmr c2">IDK</div>
+                </div>
+                <div id="bmrfeedback" class="cardFeedBack c2"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
