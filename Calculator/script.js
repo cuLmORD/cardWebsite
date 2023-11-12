@@ -2,7 +2,7 @@ const display = document.getElementById("display");
 let currentval = "";
 let standby = "";
 let isEvalSuccessful = false;
-const allowedValues = ['*', '(', ')', '/', '+', '-', '.'];
+const allowedValues = ['*', '/', '+', '-', '.'];
 const numbercaller = (value) => {
     if (display.value === "Syntax Error :(") {
             display.value = "";
